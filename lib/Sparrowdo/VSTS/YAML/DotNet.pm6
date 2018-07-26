@@ -1,6 +1,6 @@
 use v6;
 
-unit module Sparrowdo::VSTS::YAML::DotNet:ver<0.0.1>;
+unit module Sparrowdo::VSTS::YAML::DotNet:ver<0.0.2>;
 
 use Sparrowdo;
 use Sparrowdo::Core::DSL::Template;
@@ -19,6 +19,7 @@ our sub tasks (%args) {
     variables => %( 
       project => %args<project>,
       configuration => %args<configuration> || 'debug' ,
+      display_name => %args<display-name> || "DotNetBuild %args<project>"
     )
   );
 
