@@ -24,7 +24,9 @@ Build configuration
 
 # See also
 
-Sparrowdo::VSTS::YAML::Solution
+- Sparrowdo::VSTS::YAML::Solution
+
+- Sparrowdo::VSTS::YAML::MsBuild
 
 # Author
 
